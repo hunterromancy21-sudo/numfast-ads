@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Numfast - Fast Math Puzzle Game</title>
+    <title>Numfast - Fast Mental Math</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         * {
@@ -23,52 +23,79 @@
             text-align: center;
             padding: 20px;
         }
-        .container {
-            max-width: 400px;
+        .main-container {
+            max-width: 500px;
             width: 100%;
             background: #1e293b;
-            padding: 30px;
+            padding: 40px;
             border-radius: 20px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
-        .logo {
-            width: 100px;
-            height: 100px;
-            border-radius: 22px;
-            margin-bottom: 20px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.5);
-            border: 2px solid #38bdf8;
+        /* Logo and Title Styling */
+        .header-section {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 30px;
         }
-        h1 {
-            font-size: 26px;
-            margin-bottom: 10px;
-            color: #f8fafc;
+        .logo-icon {
+            width: 60px;
+            height: auto;
         }
+        .title-text {
+            font-size: 32px;
+            font-weight: 700;
+            color: #ffffff;
+        }
+        .subtitle-text {
+            font-size: 16px;
+            color: #94a3b8;
+            margin-bottom: -10px; /* تقليل المسافة مع الصورة */
+        }
+
+        /* The Game Screenshot */
+        .screenshot-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 16px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+            border: 3px solid #38bdf8;
+        }
+
+        /* Description Paragraph */
         p {
             font-size: 14px;
-            color: #94a3b8;
+            color: #cbd5e1;
             margin-bottom: 30px;
             line-height: 1.6;
+            max-width: 400px;
         }
+
+        /* Download Button */
         .btn-download {
             display: inline-block;
             background: linear-gradient(135deg, #0ea5e9, #2563eb);
             color: white;
-            padding: 15px 30px;
-            font-size: 16px;
+            padding: 18px 40px;
+            font-size: 18px;
             font-weight: 600;
             text-decoration: none;
             border-radius: 50px;
-            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4);
+            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.5);
             transition: transform 0.2s, box-shadow 0.2s;
             width: 100%;
+            max-width: 300px;
         }
         .btn-download:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(37, 99, 235, 0.6);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 25px rgba(37, 99, 235, 0.7);
         }
         .footer {
-            margin-top: 20px;
+            margin-top: 30px;
             font-size: 12px;
             color: #64748b;
         }
@@ -76,14 +103,21 @@
 </head>
 <body>
 
-    <div class="container">
-        <img src="YOUR_GAME_LOGO_URL.png" alt="Numfast Logo" class="logo">
+    <div class="main-container">
+        <div class="header-section">
+            <img src="numfast_logo.png" alt="Numfast Logo" class="logo-icon">
+            <span class="title-text">NumFast</span>
+        </div>
         
-        <h1>Numfast</h1>
-        <p>تحدى عقلك مع أقوى لعبة حساب سريع وألغاز ذكية! هل يمكنك تجاوز المراحل الصعبة؟ حمّل اللعبة الآن وابدأ التحدي.</p>
+        <p class="subtitle-text">Speed Mental Math</p>
+        <br>
+
+        <img src="image_3.png" alt="NumFast Gameplay Promotion" class="screenshot-img">
+
+        <p>تحدى عقلك مع أقوى لعبة حساب سريع وألغاز ذكية! هل يمكنك تجاوز جميع المراحل والوصول لـ Level 30؟ حمّل اللعبة الآن وابدأ المتعة والتجربة.</p>
         
         <a href="https://play.google.com/store/apps/details?id=YOUR_PACKAGE_NAME" class="btn-download">
-            تحميل من Google Play 🚀
+            تحميل من Google Play الآن 🚀
         </a>
     </div>
 
