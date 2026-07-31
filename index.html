@@ -80,9 +80,30 @@
         <img src="image_3.png" alt="NumFast Game" class="game-image">
     </div>
     
-    <a href="https://play.google.com/store/apps/details?id=com.numfast.gaming" class="download-btn" onclick="gtag('event', 'click_download', {'event_category': 'Button', 'event_label': 'Google Play'});">
+    <a href="https://play.google.com/store/apps/details?id=com.numfast.gaming" class="download-btn" onclick="trackDownload(event)">
         <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play">
     </a>
+
+    <script>
+        function trackDownload(event) {
+            event.preventDefault(); // كيحبس التحويل لثانية وحدة
+            var targetUrl = event.currentTarget.href;
+
+            // كيسيفط الميساج لـ Google Analytics
+            gtag('event', 'click_download', {
+                'event_category': 'Button',
+                'event_label': 'Google Play',
+                'event_callback': function() {
+                    window.location.href = targetUrl; // كيديها لـ بلاي ستور منين يتسجل الميساج
+                }
+            });
+
+            // احتياط: إيلا تعطل جوجل، كيديها لمتجر بلاي بعد 500 ملي ثانية باش ما يضيعش الزائر
+            setTimeout(function() {
+                window.location.href = targetUrl;
+            }, 500);
+        }
+    </script>
 
 </body>
 </html>
