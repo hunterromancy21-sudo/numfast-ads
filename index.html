@@ -21,7 +21,7 @@
         
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #000000; /* خلفية كحلة */
+            background-color: #000000;
             color: #ffffff;
             margin: 0;
             padding: 20px;
@@ -29,7 +29,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: space-between;
-            min-height: 100vh; /* هادي كتخلي الصفحة تاخد قياس شاشة التليفون بالضبط */
+            min-height: 100vh;
         }
         
         h1 {
@@ -50,16 +50,17 @@
 
         .game-image {
             max-width: 90%;
-            max-height: 55vh; /* هادي باش الصورة تاخد غي 55% من الشاشة والبوطونة تبقى باينة */
+            max-height: 55vh;
             object-fit: contain;
-            border: 3px solid #ffffff; /* الإطار الأبيض */
+            border: 3px solid #ffffff;
             border-radius: 12px;
             box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
         }
 
         .download-btn {
-            margin-bottom: 20px; /* كتهز البوطونة شوية من التحت باش تبان مزيان */
+            margin-bottom: 20px;
             transition: transform 0.2s ease-in-out;
+            cursor: pointer;
         }
 
         .download-btn:hover {
@@ -67,7 +68,7 @@
         }
 
         .download-btn img {
-            width: 200px; /* قياس مناسب للتليفون */
+            width: 200px;
         }
     </style>
 </head>
@@ -79,7 +80,7 @@
         <img src="image_3.png" alt="NumFast Game" class="game-image">
     </div>
     
-    <a href="https://play.google.com/store/apps/details?id=com.numfast.gaming" class="download-btn">
+    <a href="https://play.google.com/store/apps/details?id=com.numfast.gaming" class="download-btn" onclick="gtag('event', 'click_download', {'event_category': 'Button', 'event_label': 'Google Play'});">
         <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play">
     </a>
 
