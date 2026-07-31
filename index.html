@@ -18,64 +18,54 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            min-height: 100vh;
+            height: 100vh;
+            overflow: hidden; /* منع التمرير نهائياً */
             text-align: center;
             padding: 10px;
         }
         .main-container {
-            max-width: 420px;
+            max-width: 380px;
             width: 100%;
             background: #1e293b;
-            padding: 20px;
-            border-radius: 16px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+            padding: 15px;
+            border-radius: 14px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.5);
             display: flex;
             flex-direction: column;
             align-items: center;
         }
         .title-text {
-            font-size: 26px;
+            font-size: 22px;
             font-weight: 700;
             color: #ffffff;
         }
-        .subtitle-text {
-            font-size: 13px;
-            color: #38bdf8;
-            margin-bottom: 12px;
-            font-weight: 600;
-        }
-        /* تصغير الصورة باش تدخل مريحة في شاشة التليفون */
+        /* تصغير الصورة باش تدخل مريحة وما تقطعش */
         .screenshot-img {
-            max-width: 180px;
+            max-width: 150px;
             height: auto;
-            border-radius: 12px;
-            margin-bottom: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+            border-radius: 10px;
+            margin: 8px 0;
             border: 2px solid #38bdf8;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.3);
         }
         p {
-            font-size: 12px;
+            font-size: 11px;
             color: #cbd5e1;
-            margin-bottom: 15px;
-            line-height: 1.4;
+            margin-bottom: 12px;
+            line-height: 1.3;
         }
         .btn-download {
             display: inline-block;
             background: linear-gradient(135deg, #0ea5e9, #2563eb);
             color: white;
-            padding: 12px 30px;
-            font-size: 15px;
+            padding: 10px 20px;
+            font-size: 14px;
             font-weight: 600;
             text-decoration: none;
             border-radius: 50px;
-            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
+            box-shadow: 0 4px 10px rgba(37, 99, 235, 0.4);
             width: 100%;
-            max-width: 260px;
-        }
-        .footer {
-            margin-top: 10px;
-            font-size: 10px;
-            color: #64748b;
+            max-width: 240px;
         }
     </style>
 </head>
@@ -83,17 +73,14 @@
 
     <div class="main-container">
         <div class="title-text">NumFast</div>
-        <div class="subtitle-text">Speed Mental Math</div>
-
+        
         <img src="image_3.png" alt="NumFast Gameplay Promotion" class="screenshot-img">
 
-        <p>Challenge your brain with the ultimate fast-paced mental math puzzle game! Download now and start the experience.</p>
+        <p>Challenge your brain with fast mental math! Download now and start the experience.</p>
         
         <a href="https://play.google.com/store/apps/details?id=com.numfast.gaming" class="btn-download">
             Download on Google Play 🚀
         </a>
-        
-        <div class="footer">&copy; 2026 Numfast. All rights reserved.</div>
     </div>
 
 </body>
